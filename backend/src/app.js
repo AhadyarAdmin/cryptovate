@@ -64,7 +64,7 @@ app.use((err, req, res, next) => {
 });
 
 // 404 Handler
-app.all('*', (req, res) => {
+app.all('/*all', (req, res) => {
   res.status(404).json({ 
     success: false, 
     error: 'Route not found' 
